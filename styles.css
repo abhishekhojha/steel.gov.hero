@@ -1,0 +1,40 @@
+#steel-background-video {
+	width: 90vw;
+	max-height: 70vh;
+	margin: auto;
+	display: block;
+    object-fit: cover;
+}
+.steel-images {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 0 26px;
+	gap: 20px;
+    max-width: 90vw;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.steel-images img{
+    border-radius: 10px;
+}
+@media (max-width:767px){
+    .steel-images{
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+    }
+    .steel-images img {
+        max-height: 150px;
+        width: auto;
+        max-width: 100%;
+        margin: auto;
+    }
+}
