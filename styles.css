@@ -1,23 +1,17 @@
-#steel-background-video {
-	width: 90vw;
-	max-height: 70vh;
-	margin: auto;
-	display: block;
-    object-fit: cover;
+.steel-video-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: end;
+}
+.steel-video .bg-video{
+    width: 100%;
 }
 .steel-images {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	padding: 0 26px;
+	padding: 20px 26px;
 	gap: 20px;
     max-width: 90vw;
     margin: 0 auto;
-    margin-top: -50px;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 img{
     display: block;
@@ -37,4 +31,12 @@ img{
         max-width: 100%;
         margin: auto;
     }
+    .steel-video-container {
+        grid-template-columns: 100%;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
